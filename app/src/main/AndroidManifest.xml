@@ -18,7 +18,9 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".ListActivity" />
-        <activity android:name=".DetailsActivity"></activity>
+        <activity android:name=".DetailsActivity" />
+        <activity android:name=".Home" />
+        <activity android:name=".gameslist"></activity>
     </application>
 
 </manifest>
