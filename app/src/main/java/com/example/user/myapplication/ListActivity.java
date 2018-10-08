@@ -32,7 +32,7 @@ public class ListActivity extends AppCompatActivity implements AdapterView.OnIte
         arrayList.add("Dominic");
         arrayList.add("Grigor");
         arrayList.add("Anderson");
-        arrayList.add("Isner");
+        arrayList.add("Lsner");
         arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, arrayList);
         lvcountries.setAdapter(arrayAdapter);
     }
@@ -91,14 +91,14 @@ public class ListActivity extends AppCompatActivity implements AdapterView.OnIte
 
         if(selectedItem.equals("Anderson")) {
             intent.putExtra("player","Anderson");
-        }else if(selectedItem.equals("Isner")) {
+        }else if(selectedItem.equals("Lsner")) {
 
         }
 
-        if(selectedItem.equals("Isner")) {
-            intent.putExtra("player","Isner");
+        if(selectedItem.equals("Lsner")) {
+            intent.putExtra("player", "Lsner");
 
-        startActivity(intent);
-
+            startActivity(intent);
+        }
     }
 }
