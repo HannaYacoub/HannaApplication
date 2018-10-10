@@ -21,7 +21,7 @@ public class ListActivity extends AppCompatActivity implements AdapterView.OnIte
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
-        lvcountries = (ListView) findViewById(R.id.lvcountries);
+        lvcountries = (ListView) findViewById(R.id.lvTopTen);
 
         arrayList.add("Nadal");
         arrayList.add("Federer");
@@ -35,6 +35,7 @@ public class ListActivity extends AppCompatActivity implements AdapterView.OnIte
         arrayList.add("Lsner");
         arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, arrayList);
         lvcountries.setAdapter(arrayAdapter);
+        lvcountries.setOnItemClickListener(this);
     }
 
     @Override
