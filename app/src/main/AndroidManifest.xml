@@ -29,7 +29,8 @@
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login" />
-        <activity android:name=".favorites"></activity>
+        <activity android:name=".favorites" />
+        <activity android:name=".Main2Activity"></activity>
     </application>
 
 </manifest>
