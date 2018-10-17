@@ -23,16 +23,16 @@ public class ListActivity extends AppCompatActivity implements AdapterView.OnIte
 
         lvcountries = (ListView) findViewById(R.id.lvTopTen);
 
-        arrayList.add("Nadal");
-        arrayList.add("Federer");
-        arrayList.add("Djokovic");
-        arrayList.add("Juan Martin");
-        arrayList.add("Zverev");
-        arrayList.add("Marin");
-        arrayList.add("Dominic");
-        arrayList.add("Grigor");
-        arrayList.add("Anderson");
-        arrayList.add("Lsner");
+        arrayList.add("1. Nadal");
+        arrayList.add("2. Federer");
+        arrayList.add("3. Djokovic");
+        arrayList.add("4. Juan Martin");
+        arrayList.add("5. Zverev");
+        arrayList.add("6. Marin");
+        arrayList.add("7. Dominic");
+        arrayList.add("8. Grigor");
+        arrayList.add("9. Anderson");
+        arrayList.add("10. Lsner");
         arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, arrayList);
         lvcountries.setAdapter(arrayAdapter);
         lvcountries.setOnItemClickListener(this);
