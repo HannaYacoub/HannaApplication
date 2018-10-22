@@ -23,7 +23,7 @@ public class ListActivity extends AppCompatActivity implements AdapterView.OnIte
 
         lvcountries = (ListView) findViewById(R.id.lvTopTen);
 
-        arrayList.add("1. Nadal");
+        arrayList.add("1. Nadal                                7660");
         arrayList.add("2. Federer");
         arrayList.add("3. Djokovic");
         arrayList.add("4. Juan Martin");
@@ -99,7 +99,8 @@ public class ListActivity extends AppCompatActivity implements AdapterView.OnIte
         if(selectedItem.equals("Lsner")) {
             intent.putExtra("player", "Lsner");
 
-            startActivity(intent);
         }
+        startActivity(intent);
+
     }
 }

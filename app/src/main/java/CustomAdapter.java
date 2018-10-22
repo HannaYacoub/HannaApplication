@@ -39,7 +39,7 @@ public class CustomAdapter extends ArrayAdapter<Item> {
             ImageView imageView = (ImageView) v.findViewById(R.id.imageView2);
             imageView.setImageResource(p.getImage());
         }
-            return v;
-        }
+        return v;
     }
 }
+
