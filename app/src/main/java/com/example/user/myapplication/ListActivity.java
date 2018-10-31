@@ -92,12 +92,12 @@ public class ListActivity extends AppCompatActivity implements AdapterView.OnIte
 
         if(selectedItem.equals("Anderson")) {
             intent.putExtra("player","Anderson");
-        }else if(selectedItem.equals("Lsner")) {
+        }else if(selectedItem.equals("Isner")) {
 
         }
 
-        if(selectedItem.equals("Lsner")) {
-            intent.putExtra("player", "Lsner");
+        if(selectedItem.equals("Isner")) {
+            intent.putExtra("player", "Isner");
 
         }
         startActivity(intent);
