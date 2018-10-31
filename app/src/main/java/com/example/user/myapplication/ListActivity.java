@@ -31,7 +31,7 @@ public class ListActivity extends AppCompatActivity implements AdapterView.OnIte
         arrayList.add("6. Marin                                                                   4185");
         arrayList.add("7. Dominic                                                              3825");
         arrayList.add("8. Anderson                                                            3730");
-        arrayList.add("9. Lsner                                                                  3380");
+        arrayList.add("9. Isner                                                                   3380");
         arrayList.add("10. Grigor                                                               3335");
         arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, arrayList);
         lvcountries.setAdapter(arrayAdapter);
