@@ -19,41 +19,48 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Name"
-        android:textColor="@android:color/white" />
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/tvAge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Age" />
+        android:text="Age"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/tvWeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Weight" />
+        android:text="Weight"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/tvLength"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Length" />
+        android:text="Length"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/tvGrandslams"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Grand slams won (singles)" />
+        android:text="Grand slams won (singles)"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/tvPartner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="partner" />
+        android:text="partner"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/tvFrenchopen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="French open" />
+        android:text="French open"
+        android:textSize="24sp" />
 </LinearLayout>
