@@ -28,7 +28,8 @@
         <activity android:name=".gameslist" />
         <activity android:name=".favorites" />
         <activity android:name=".Main2Activity" />
-        <activity android:name=".ListActivity"></activity>
+        <activity android:name=".ListActivity" />
+        <activity android:name=".FireActivity"></activity>
     </application>
 
 </manifest>
