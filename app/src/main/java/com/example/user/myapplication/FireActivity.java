@@ -36,6 +36,8 @@ public class FireActivity extends AppCompatActivity {
         adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, users);
         lvUsers.setAdapter(adapter);
 
+       // refrence.push().equals();
+
         refrence.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {

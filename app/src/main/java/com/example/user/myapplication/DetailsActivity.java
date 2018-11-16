@@ -22,7 +22,7 @@ public class DetailsActivity extends AppCompatActivity {
     TextView tvAge;
     TextView tvWeight;
     TextView tvLength;
-    TextView tvGrandslams;
+    TextView tvGrandslams ;
     TextView tvPartner;
     TextView tvFrenchopen;
 
@@ -35,8 +35,7 @@ public class DetailsActivity extends AppCompatActivity {
         tvAge = findViewById(R.id.tvAge);
         tvWeight = findViewById(R.id.tvWeight);
         tvLength = findViewById(R.id.tvLength);
-        tvGrandslams = findViewById(R.id.tvGrandslams);
-        tvFrenchopen = findViewById(R.id.tvFrenchopen);
+        tvGrandslams = findViewById(R.id.tvGrandslams );
 
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         final DatabaseReference refrence = database.getReference("Players");
