@@ -42,7 +42,7 @@ public class DetailsActivity extends AppCompatActivity {
         tvName.setText(player.getName());
         tvAge.setText(player.getAge());
         tvWeight.setText(player.getWeight());
-        tvLength.setText(player.getLength());
+     //   tvLength.setText(player.getLength());
         tvGrandslams.setText(player.getGrandslams());
 
     }
