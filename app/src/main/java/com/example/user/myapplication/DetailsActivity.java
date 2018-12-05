@@ -24,7 +24,6 @@ public class DetailsActivity extends AppCompatActivity {
     TextView tvLength;
     TextView tvGrandslams ;
     TextView tvPartner;
-    TextView tvFrenchopen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,43 +36,14 @@ public class DetailsActivity extends AppCompatActivity {
         tvLength = findViewById(R.id.tvLength);
         tvGrandslams = findViewById(R.id.tvGrandslams );
 
-        final FirebaseDatabase database = FirebaseDatabase.getInstance();
-        final DatabaseReference refrence = database.getReference("Players");
 
- /*       lvUsers = findViewById(R.id.lvUsers);
-        users = new ArrayList<>();
+        Player player = (Player) getIntent().getSerializableExtra("player");
 
-        adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, users);
-        lvUsers.setAdapter(adapter);*/
-
-        refrence.addChildEventListener(new ChildEventListener() {
-            @Override
-            public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-                Map<String, String> map = (Map<String, String>) dataSnapshot.getValue();
-                tvName.setText(map.get("Name"));
-
-            }
-
-            @Override
-            public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
-            }
-
-            @Override
-            public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
-
-            }
-
-            @Override
-            public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
+        tvName.setText(player.getName());
+        tvAge.setText(player.getAge());
+        tvWeight.setText(player.getWeight());
+        tvLength.setText(player.getLength());
+        tvGrandslams.setText(player.getGrandslams());
 
     }
 }

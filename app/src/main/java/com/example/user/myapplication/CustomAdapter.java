@@ -1,3 +1,5 @@
+package com.example.user.myapplication;
+
 import android.content.Context;
 import android.media.Image;
 import android.support.annotation.NonNull;
@@ -12,12 +14,12 @@ import com.example.user.myapplication.R;
 
 import java.util.List;
 
-public class CustomAdapter extends ArrayAdapter<Item> {
+public class CustomAdapter extends ArrayAdapter<Player> {
 
     private int resourceLayout;
     private Context mContext;
 
-    public CustomAdapter(@NonNull Context context, int resource, @NonNull List<Item> objects) {
+    public CustomAdapter(@NonNull Context context, int resource, @NonNull List<Player> objects) {
         super(context, resource, objects);
         this.resourceLayout = resource;
         this.mContext = context;
@@ -30,13 +32,13 @@ public class CustomAdapter extends ArrayAdapter<Item> {
             v = LayoutInflater.from(mContext).inflate(resourceLayout,parent, false);
 
 
-        Item p = getItem(position);
+        Player p = getItem(position);
 
         if (p != null) {
-            TextView tvName = (TextView) v.findViewById(R.id.tvName);
+            TextView tvName = (TextView) v.findViewById(R.id.PlayerTv);
             tvName.setText(p.getName());
 
-            ImageView imageView = (ImageView) v.findViewById(R.id.imageView2);
+            ImageView imageView = (ImageView) v.findViewById(R.id.playerImageView);
             imageView.setImageResource(p.getImage());
         }
         return v;
