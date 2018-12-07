@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.firebase.database.ChildEventListener;
@@ -24,6 +25,7 @@ public class DetailsActivity extends AppCompatActivity {
     TextView tvLength;
     TextView tvGrandslams ;
     TextView tvPartner;
+    ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,7 @@ public class DetailsActivity extends AppCompatActivity {
         tvWeight = findViewById(R.id.tvWeight);
         tvLength = findViewById(R.id.tvLength);
         tvGrandslams = findViewById(R.id.tvGrandslams );
+        imageView = findViewById(R.id.imageView2);
 
 
         Player player = (Player) getIntent().getSerializableExtra("player");
@@ -42,8 +45,9 @@ public class DetailsActivity extends AppCompatActivity {
         tvName.setText(player.getName());
         tvAge.setText(player.getAge());
         tvWeight.setText(player.getWeight());
-     //   tvLength.setText(player.getLength());
         tvGrandslams.setText(player.getGrandslams());
+        imageView.setImageResource(player.getImage());
+
 
     }
 }

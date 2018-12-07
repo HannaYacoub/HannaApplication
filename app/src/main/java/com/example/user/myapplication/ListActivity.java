@@ -36,16 +36,6 @@ public class ListActivity extends AppCompatActivity implements AdapterView.OnIte
         players.add(new Player("john Isner", "33", "80", "2.8", "0",R.drawable.isner));
         players.add(new Player("Grigor Dimitrov", "27", "80", "1.90", "0",R.drawable.grigor));
 
-        arrayList.add("1. Nadal                                                                   7660");
-        arrayList.add("2. Djokovic                                                              7445");
-        arrayList.add("3. Federer                                                                6260");
-        arrayList.add("4. Juan Martin                                                        5760");
-        arrayList.add("5. Zverev                                                                   5052");
-        arrayList.add("6. Marin                                                                    4185");
-        arrayList.add("7. Dominic                                                              3825");
-        arrayList.add("8. Anderson                                                            3730");
-        arrayList.add("9. Isner                                                                    3380");
-        arrayList.add("10. Grigor                                                               3335");
 
         arrayAdapter = new CustomAdapter(this, R.layout.custom, players);
         lvcountries.setAdapter(arrayAdapter);
@@ -54,7 +44,7 @@ public class ListActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        String selectedItem = arrayList.get(position);
+
         Intent intent = new Intent(this, DetailsActivity.class);
         intent.putExtra("player",players.get(position));
         startActivity(intent);
