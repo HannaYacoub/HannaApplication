@@ -22,14 +22,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".AlertDialogActivity" />
+        <activity android:name=".AboutActivity" />
         <activity android:name=".DetailsActivity" />
         <activity android:name=".FireActivity" />
         <activity android:name=".gameslist" />
         <activity android:name=".favorites" />
         <activity android:name=".Main2Activity" />
         <activity android:name=".ListActivity" />
-        <activity android:name=".CameraGalleryActivity"></activity>
+        <activity android:name=".CameraGalleryActivity" />
+        <activity android:name=".AlertDialogActivity"></activity>
     </application>
 
 </manifest>

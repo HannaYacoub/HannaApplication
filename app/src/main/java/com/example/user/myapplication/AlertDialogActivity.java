@@ -1,11 +1,13 @@
 package com.example.user.myapplication;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
-public class AlertDialogActivity extends AppCompatActivity implements DialogInterface.OnClickListener{
+public class AlertDialogActivity extends AppCompatActivity implements DialogInterface.OnClickListener,View.OnClickListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,13 +19,10 @@ public class AlertDialogActivity extends AppCompatActivity implements DialogInte
     public void onClick(DialogInterface dialog, int which) {
         if(which==dialog.BUTTON_POSITIVE)
         {
-            super.onBackPressed();
-            dialog.cancel();
+            Intent intent= new Intent(getApplication(),Home.class);
+            startActivity(intent);
         }
-        if (which==dialog.BUTTON_NEGATIVE)
-        {
-            dialog.cancel();
-        }
+
     }
 
     @Override
@@ -39,30 +38,10 @@ public class AlertDialogActivity extends AppCompatActivity implements DialogInte
         dialog.show();
     }
 
-    public static class Item {
-        private int image;
-        private String name;
+    @Override
+    public void onClick(View v) {
 
-        public int getImage() {
-            return image;
-        }
-
-        public void setImage(int image) {
-            this.image = image;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
-
-        public Item(int image, String name) {
-
-            this.image = image;
-            this.name = name;
-        }
     }
+
+
 }
