@@ -4,15 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".gameslist">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="67dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Today"
+        android:text="Games"
         android:textAlignment="center"
         android:textSize="30sp" />
+
+    <ListView
+        android:id="@+id/gamesList"
+        android:layout_width="match_parent"
+        android:layout_height="402dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btAddGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Add Game" />
 
 </LinearLayout>

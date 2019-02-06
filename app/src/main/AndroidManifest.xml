@@ -30,7 +30,8 @@
         <activity android:name=".Main2Activity" />
         <activity android:name=".ListActivity" />
         <activity android:name=".CameraGalleryActivity" />
-        <activity android:name=".AlertDialogActivity"></activity>
+        <activity android:name=".AlertDialogActivity" />
+        <activity android:name=".AddGameActivity"></activity>
     </application>
 
 </manifest>
