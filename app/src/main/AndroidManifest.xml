@@ -31,7 +31,16 @@
         <activity android:name=".ListActivity" />
         <activity android:name=".CameraGalleryActivity" />
         <activity android:name=".AlertDialogActivity" />
-        <activity android:name=".AddGameActivity"></activity>
+        <activity android:name=".AddGameActivity" />
+
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".MyIntentService"
+            android:exported="false"></service>
     </application>
 
 </manifest>

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#000000"
     tools:context=".DetailsActivity">
 
 
@@ -12,6 +13,7 @@
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="311dp"
+        android:background="@color/common_google_signin_btn_text_dark_focused"
         app:srcCompat="@drawable/nadal" />
 
     <TextView
@@ -27,6 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Age"
+        android:textColor="@android:color/white"
         android:textSize="24sp" />
 
     <TextView
@@ -34,6 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Weight"
+        android:textColor="@android:color/white"
         android:textSize="24sp" />
 
     <TextView
@@ -41,6 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Length"
+        android:textColor="@android:color/white"
         android:textSize="24sp" />
 
     <TextView
@@ -48,6 +53,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Grand slams won (singles)"
+        android:textColor="@android:color/white"
         android:textSize="24sp" />
 
     <TextView
@@ -55,6 +61,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="partner"
+        android:textColor="@android:color/white"
         android:textSize="24sp" />
 
 </LinearLayout>
