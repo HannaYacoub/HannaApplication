@@ -26,6 +26,10 @@ public class Home extends AppCompatActivity implements View.OnClickListener,Dial
         btRating = findViewById(R.id.btRating);
         btRating.setOnClickListener(this);
 
+        Intent intent=new Intent(this,MusicService.class);
+        startService(intent);
+
+
     }
 
     @Override
