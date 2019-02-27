@@ -24,7 +24,7 @@ public class MusicService extends Service {
         mp=MediaPlayer.create(getApplicationContext(),R.raw.bensound);
 
     }
-    public int onStartComand(Intent intent, int flags, int startId) {
+    public int onStartCommand(Intent intent, int flags, int startId) {
         mp.setLooping(true);
         mp.start();
         isRunning = true;
