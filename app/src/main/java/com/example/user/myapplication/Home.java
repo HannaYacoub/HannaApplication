@@ -14,7 +14,7 @@ import android.widget.Button;
 public class Home extends AppCompatActivity implements View.OnClickListener,DialogInterface.OnClickListener{
 
     //1.
-    Button btGames, btRating ;    @Override
+    Button btGames, btRating, btPhoto ;    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
@@ -25,6 +25,9 @@ public class Home extends AppCompatActivity implements View.OnClickListener,Dial
 
         btRating = findViewById(R.id.btRating);
         btRating.setOnClickListener(this);
+
+        btPhoto = findViewById(R.id.btPhoto);
+        btPhoto.setOnClickListener(this);
 
         Intent intent=new Intent(this,MusicService.class);
         startService(intent);
@@ -37,7 +40,11 @@ public class Home extends AppCompatActivity implements View.OnClickListener,Dial
         if(btGames == v){
             Intent i = new Intent(this, gameslist.class);
             startActivity(i);
-        }else{
+        }else if(btPhoto == v){
+            Intent i = new Intent(this, CameraGalleryActivity.class);
+            startActivity(i);
+        }
+        else{
             Intent i = new Intent(this, ListActivity.class);
             startActivity(i);
         }
